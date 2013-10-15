@@ -1,0 +1,11 @@
+{
+  "name": "hsws",
+  "author": "Brad <bbates@healthspot.net>",
+  "description": "HealthSpot API Test Service`",
+  "version": "0.0.1",
+  "private": false,
+  "dependencies": {
+    "express": "3.x",
+	"log4js" : "git://github.com/bbates-healthspot/log4js-node"
+  }
+}
