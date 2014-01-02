@@ -78,6 +78,23 @@ app.post('/endpoint*', function(req, res){
     res.end();
 });
 
+app.put('/endpoint*', function(req, res){
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+	var body = JSON.stringify(req.body);
+	var defaultResponse = { success : true};
+	res.write(JSON.stringify(defaultResponse));
+	//console.log(getUrl(req));
+	//console.log('headers: ' + JSON.stringify(req.headers));
+    //console.log('body: ' + JSON.stringify(req.body));
+    res.end();
+});
+
 var server = http.createServer(app).listen(appPort, function(){
- console.log("server listening on port " + appPort);
+ console.log("");
+ console.log("**************************************************************************************");
+ console.log("*     server listening on port " + appPort + "                                                  *");
+ console.log("*     for gets, posts & puts                                                         *"); 
+ console.log("*     use localhost:" + appPort + "/endpoint/                                                   *");
+ console.log("*                                                                                    *");
+ console.log("**************************************************************************************");
 });
