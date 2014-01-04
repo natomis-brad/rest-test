@@ -1,7 +1,7 @@
 {
-  "name": "hsws",
-  "author": "Brad <bbates@healthspot.net>",
-  "description": "HealthSpot API Test Service`",
+  "name": "rest-test",
+  "author": "Brad <bbates@natomis.com>",
+  "description": "API Test Service`",
   "version": "0.0.1",
   "private": false,
   "dependencies": {
